@@ -149,7 +149,7 @@ if (num1 < 0 || num2 < 0 || num3 < 0) {
  } else if (num3 > num1 && num3 > num2) {
   return num3 + 1;
  } else {
-  return "false";
+  return false;
  }
 }
 // INCOMPLETO
@@ -189,11 +189,12 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
+ let multiploDeSeis = [];
   for (var i = 0; i <= 60; i++) {
     if (i % 6 === 0) {
-    console.log(i)
-    }
-}
+    multiploDeSeis.push(i);
+  } 
+} return multiploDeSeis;
 }
 
 function tieneTresDigitos(numero){
